@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+      }
+      .fat {
+        background-image: url("https://www.imgonline.com.ua/result_img/imgonline-com-ua-convertCFEGT9XFEQHX.jpg");
+        width: 300px;
+        height: 350px;
+        animation: walk 2s steps(9) infinite, forward 3s linear infinite;
+      }
+
+      @keyframes walk {
+        0% {
+          background-position: 0px;
+        }
+        100% {
+          background-position: 2700px;
+        }
+      }
+      @keyframes forward {
+        0% {
+          transform: translateX(-200px);
+        }
+        100% {
+          transform: translateX(1200px);
+        }
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="fat"></div>
+    <div class="forwards"></div>
+  </body>
+</html>
